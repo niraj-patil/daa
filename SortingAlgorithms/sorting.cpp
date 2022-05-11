@@ -1,6 +1,7 @@
 #include <iostream>
 #include "scripts.h"
 #include "selectionSort.h"
+#include "insertionSort.h"
 #include "mergeSort.h"
 
 using namespace std;
