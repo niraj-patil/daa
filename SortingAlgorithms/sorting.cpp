@@ -20,10 +20,11 @@ int main(){
     //Displaying the Inital State of the Array
     cout<<"Initial State\t:";
     displayArray(start,size);
-    cout<<"1. Selection Sort(Default)\n2. Merge Sort\nEnter Choice:";
+    cout<<"1. Selection Sort(Default)\n2. Insertion Sort\n3. Merge Sort\nEnter Choice:";
         int temp;
         cin>>temp;
-    if(temp==2) mergeSort(start,size);
+    if(temp==2) insertionSort(start,size);
+    else if(temp==3) mergeSort(start,size);
     else selectionSort(start,size);
     //Merge Sorting the Array
     mergeSort(start,size);
