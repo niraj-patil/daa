@@ -1,5 +1,6 @@
 #include <iostream>
 #include "scripts.h"
+#include "selectionSort.h"
 #include "mergeSort.h"
 
 using namespace std;
@@ -19,6 +20,11 @@ int main(){
     //Displaying the Inital State of the Array
     cout<<"Initial State\t:";
     displayArray(start,size);
+    cout<<"1. Selection Sort(Default)\n2. Merge Sort\nEnter Choice:";
+        int temp;
+        cin>>temp;
+    if(temp==2) mergeSort(start,size);
+    else selectionSort(start,size);
     //Merge Sorting the Array
     mergeSort(start,size);
     //Displaying the Final State of the Array
