@@ -20,7 +20,7 @@ tuple<int*,int> makeArray(){
         int temp;
         cin>>temp;
         if (temp!=2){
-            cout<<"Enter Number of Requests:";
+            cout<<"Enter Number of Elements:";
             cin>>size;
             srand(time(0));
             for(int i=0;i<size;i++){
